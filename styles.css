@@ -1,0 +1,204 @@
+:root {
+  /*color*/
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /*size*/
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /*font size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  list-style: none;
+}
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--white-color);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  padding: var(--padding);
+}
+.youtube_button {
+  color: var(--red-color);
+}
+.youtube_button_content {
+  font-size: var(--font-large);
+}
+.video_section {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  z-index: 100;
+}
+.section_box {
+}
+.second_section {
+  padding: var(--padding);
+}
+.video_content {
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+}
+.video_tag {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+.video_tag li {
+  margin-right: var(--padding);
+}
+.video_title_box {
+  display: flex;
+}
+.video_title {
+  font-size: var(--font-medium);
+  margin-right: var(--padding);
+}
+.second_section .video_content .video_title_box .video_title.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.section_box .video_content .video_title_box .moreBtn {
+  height: 100%;
+  transition: transform 300ms ease-in-out;
+}
+.section_box .video_content .video_title_box .moreBtn.clicked {
+  transform: rotate(180deg);
+}
+.video_upload_time {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+.like_box {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+.like_box button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+.like_box button i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+  font-size: 16px;
+}
+.like_box button i.active {
+  color: var(--blue-color);
+}
+.user_info {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.user_info_metadata {
+  display: flex;
+  align-items: center;
+}
+.user_info_photo {
+  border-radius: 50%;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+}
+.user_info_content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  font-size: var(--font-medium);
+}
+.user_info .user_info_content .subscribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+.user_info_sub {
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-medium);
+}
+.third_section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding);
+}
+.third_section .title {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: calc(var(--padding) / 2);
+}
+.third_section .items {
+  display: flex;
+  margin-top: var(--padding);
+}
+.third_section .items .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+.third_section .items .img img {
+  width: 100%;
+}
+.third_section .items .next_content {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+.third_section .items .moreBtn {
+  height: 100%;
+  flex: 1 1 5%;
+}
+.third_section .items .name,
+.third_section .items .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+.section_box {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .section_box {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
+}

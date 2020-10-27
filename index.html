@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <i class="fab fa-youtube youtube_button"></i>
+            <span class="youtube_button_content">YouTube</span>
+        </div>
+        <div>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </nav>
+    <section class="video_section">
+      <video controls width="100%" height="500px">
+            <source src="./files/samplevideo.mp4"
+                    type="video/mp4">
+        </video>
+    </section>
+    <div class="section_box">
+    <section class="second_section">
+        <div class="video_content">
+            <ul class="video_tag">
+                <li>#태그 파란색</li><li class="video_tag">#태그 파란색</li><li class="video_tag">#태그 파란색</li>
+            </ul>
+            <div class="video_title_box">
+                <span class="video_title clamp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatum alias aliquam, quae aut soluta exercitationem doloribus aperiam animi adipisci qui quas quisquam dolor corrupti dicta maxime. Excepturi, obcaecati distinctio?</span>
+                <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+            </div>
+            <span class="video_upload_time">3M views 2month age</span>
+        </div>
+            <ul class="like_box">
+            <li>
+                <button><i class="active fas fa-thumbs-up"></i>
+                <span>1k</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-thumbs-down"></i>
+                <span>0</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-share"></i>
+                <span>Share</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-plus"></i>
+                <span>Save</span></button>
+            </li>
+            <li>
+                <button><i class="fas fa-flag"></i>
+                <span>Report</span></button>
+            </li>
+        </ul>
+        <div class="user_info">
+            <div class="user_info_metadata">
+                <img class="user_info_photo" src="/files/이대현.jpg" alt="">
+                <div class="user_info_content">
+                    <h4>이대현</h4>
+                    <span class="subscribers">이대현설명~</span>
+                </div>
+            </div>
+            <button class="user_info_sub">Subscribe</button>
+        </div>
+    </section>
+    <section class="third_section">
+        <span class="title">Up next</span>
+        <ul>
+        <li class="items">
+            <div class="img"><img class="next_image" src="./files/videosample.png" alt=""></div>
+            <div class="next_content">
+                <span class="title">제목</span>
+                <span class="name">유튜버이름</span>
+                <span class="views">올린 날짜</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="items">
+            <div class="img"><img class="next_image" src="./files/videosample2.png" alt=""></div>
+            <div class="next_content">
+                <span class="title">제목</span>
+                <span class="name">유튜버이름</span>
+                <span class="views">올린 날짜</span>
+            </div>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="items">
+            <div class="img"><img class="next_image" src="./files/videosample3.png" alt=""></div>
+            <div class="next_content">
+                <span class="title">제목</span>
+                <span class="name">유튜버이름</span>
+                <span class="views">올린 날짜</span>
+            </div>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+    </ul>
+    </section>
+</div>
+</div>  
+</body>
+</html>
